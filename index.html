@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!-- <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'"
+    /> -->
+    <title>PasswordManager!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="container" class="">
+      <div id="section-left-navigation" class="">
+        <div style="padding-left: 10px" class="">
+          <div id="profile-link-container">
+            <img class="icons" src="./assets/icons/gear-solid.svg"/>
+            <span id="appname" class="">DONATELLO</span>
+          </div>
+          <div id="search-container" class="">
+            <input type="text" id="search" placeholder="Search" />
+          </div>
+        </div>
+      </div>
+      <div id="section-main" class="">
+        <div style="padding-left: 10px" class="">
+          <div id="header-item-container" class="">
+            <div id="form-new-item" class="" >
+              <a href="#" class="form-input"><span>New Item</span></a>
+            </div>
+          </div>
+          <div id="main-item-container" class="">
+            <div class="items-container">
+              <input type="checkbox" name="items" id="1">
+              <img src="./assets/images/contoh%20icon.ico" class="" id="image1" width="20" height="20">
+              <div class="item-named" >
+                <span>Item 1</span>
+              </div>
+            </div>
+            <div class="items-container">
+              <input type="checkbox" name="items" id="1">
+              <img src="./assets/images/contoh%20icon.ico" class="" id="image1" width="20" height="20">
+              <div class="item-named" >
+                <span>Item 2</span>
+              </div>
+            </div>
+            <div class="items-container">
+              <input type="checkbox" name="items" id="1">
+              <img src="./assets/images/contoh%20icon.ico" class="" id="image1" width="20" height="20">
+              <div class="item-named" >
+                <span>Item 3</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="new-item-container" class="hide">
+          <img id="icon-close-new-item" src="./assets/icons/xmark-solid.svg" class="icons">
+          <h1>This Is New Item Menu</h1>
+        </div>
+      </div>
+    </div>
+    
+  </body>
+  <script src="./renderer.js"></script>
+  <script>
+
+  </script>
+</html>

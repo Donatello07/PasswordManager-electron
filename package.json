@@ -1,0 +1,19 @@
+{
+  "name": "password-manager-electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "watch": "nodemon --exec electron ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^26.3.0"
+  },
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
