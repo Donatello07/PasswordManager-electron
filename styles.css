@@ -5,6 +5,10 @@
   --buttoncolor: #0a431a;
   --bordercolor: #0b0b0b;
 }
+@font-face {
+  font-family: "JetBrains-Mono";
+  src: url('../PasswordManager-electron/assets/fonts/JetBrainsMono-Regular.ttf') format("truetype");
+}
 
 body {
   background-color: var(--maincolor);
@@ -49,9 +53,10 @@ div#search-container {
   border-radius: 10px;
   background-color: var(--thirdcolor);
   padding-left: 10px;
+  border: solid 1px var(--bordercolor);
 }
 div#search-container:hover {
-  border: solid 1px var(--bordercolor);
+  box-shadow: 2px 2px 5px #888888;
 }
 
 input#search,
@@ -66,6 +71,7 @@ input#search:active {
   outline: none;
   color: white;
   padding: 10px;
+  
 }
 #header-item-container {
   display: flex;
@@ -104,7 +110,9 @@ input#search:active {
   left: 0px;
   width: 100%;
   height: 100%;
-  background-color: blue;
+  background-color: gray;
+  color: black;
+  font-family: "JetBrains-Mono";
   animation-name: new-item-container-show;
   animation-duration: 1s;
 }
@@ -118,16 +126,19 @@ a.form-input {
   left: 0;
   top: 20px;
   color: white;
-  background-color: var(--buttoncolor);
-  border-radius: 15px;
+  background-color: var(--thirdcolor);
+  border: 1px solid var(--bordercolor);
+  border-radius: 44px;
   height: 40px;
-  width: 100px !important;
+  width: 133px;
   justify-content: center;
   align-items: center;
+  /* box-shadow: 5px 5px 5px #888888; */
 }
 
 .form-input:hover {
-  border: 1px solid var(--bordercolor);
+  background-color: var(--buttoncolor);
+  /* border: 1px solid var(--bordercolor); */
 }
 #main-item-container {
   max-height: 450px;
@@ -144,34 +155,49 @@ a.form-input {
 }
 
 .items-container {
-  border: 0.5 solid grey;
-  border-radius: 10px;
-  background-color: #49504b;
-  margin-bottom: 5px;
+  border-bottom: 1px solid ;
+  /* border-radius: 10px; */
+  background-color: var(--thirdcolor);
+  /* box-shadow: 5px 5px 10px #888888; */
+  /* margin-bottom: 5px; */
 }
 
-#image1 {
-  position: relative;
-  max-width: 20px;
-  max-height: 20px;
-  left: 20px;
-}
+
 
 .items-container {
   display: flex;
   justify-items: center;
+  justify-content: space-between;
   align-items: center;
   padding: 20px 5px;
 }
 .items-container:hover {
-  border: solid 1px var(--bordercolor);
+  border-top: solid 2px var(--bordercolor);
+  border-bottom: solid 2px var(--bordercolor);
+}
+.item-logo{
+  border: 1px solid gray;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  position: relative;
+  left: 10px;
+}
+.item-logo .item-image-logo{
+    position: relative;
+    max-width: 20px;
+    max-height: 20px;
+    left: 0px;
 }
 
 .item-named {
   position: relative;
-  left: 20px;
-  min-width: 30px;
-  margin-left: 20px;
+  /* left: 20px; */
+  width: 75%;
+  /* margin-left: 20px; */
+  display: flex;
+  flex-direction: column;
 }
 img.icons {
   position: relative;
@@ -191,4 +217,21 @@ span#appname {
   position: relative;
   left: 10px;
   top: -5px;
+}
+span.passwordtitle{
+  font-family: "JetBrains-Mono";
+  font-size: 12px;
+}
+span.passwordemail{
+  font-family: "JetBrains-Mono";
+  color: gray;
+  font-size: 11px;
+}
+
+.item-option img{
+  display: none;
+}
+
+.item-option img:hover{
+  cursor: pointer;
 }
