@@ -12,7 +12,7 @@
 
 body {
   background-color: var(--maincolor);
-  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  font-family: "JetBrains-Mono",-apple-system, BlinkMacSystemFont, sans-serif;
   color: white;
   /* color: #0a9632; */
 }
@@ -142,6 +142,7 @@ a.form-input {
 }
 #main-item-container {
   max-height: 450px;
+  min-height: 450px;
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -219,11 +220,9 @@ span#appname {
   top: -5px;
 }
 span.passwordtitle{
-  font-family: "JetBrains-Mono";
   font-size: 12px;
 }
 span.passwordemail{
-  font-family: "JetBrains-Mono";
   color: gray;
   font-size: 11px;
 }

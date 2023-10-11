@@ -14,6 +14,7 @@
     "electron": "^26.3.0"
   },
   "dependencies": {
+    "node-global-proxy": "^1.0.1",
     "nodemon": "^3.0.1"
   }
 }
